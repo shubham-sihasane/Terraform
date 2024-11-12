@@ -1,4 +1,12 @@
 terraform {
+
+  cloud {
+    organization = "HappyEngineers"
+    workspaces {
+      name = "TerraformEngineers"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
